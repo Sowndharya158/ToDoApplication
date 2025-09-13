@@ -6,7 +6,7 @@ export default function CompletedList({ completedList }) {
         {completedList.length === 0 ? (
           <div className="empty">
             <img
-              src="./public/list-empty.png"
+              src="/list-empty.png"
               alt="empty"
               width="50%"
               height="50%"

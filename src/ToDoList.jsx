@@ -5,12 +5,7 @@ export default function ToDoList({ todo, handleCompletion }) {
         <h2 style={{ textAlign: "center" }}>ToDo List</h2>
         {todo.length === 0 ? (
           <div className="empty">
-            <img
-              src="./public/list-empty.png"
-              alt="empty"
-              width="50%"
-              height="50%"
-            />
+            <img src="/list-empty.png" alt="empty" width="50%" height="50%" />
             <h3>
               <span style={{ fontWeight: "600" }}>
                 You dont have any items to show!
