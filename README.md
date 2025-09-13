@@ -11,8 +11,6 @@ Link -
 
 ✅ Mark tasks as completed
 
-🗑️ Delete tasks you no longer need
-
 📦 Completed tasks are stored in a separate box with date & time of completion
 
 🎨 Clean UI with custom checkbox styling
@@ -23,6 +21,6 @@ Link -
 
 React (frontend)
 
-CSS (custom styling, including styled checkboxes)
+HTML, CSS (custom styling, including styled checkboxes)
 
 JavaScript (ES6)
