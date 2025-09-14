@@ -87,4 +87,10 @@ ul {
     gap: 3rem;
     margin: 3rem;
   }
+  li {
+    flex-wrap: wrap;
+  }
+  ul {
+    font-size: 0.8rem;
+  }
 }

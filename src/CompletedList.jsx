@@ -1,3 +1,6 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faStar } from "@fortawesome/free-solid-svg-icons";
+
 export default function CompletedList({ completedList }) {
   return (
     <>
@@ -5,12 +8,7 @@ export default function CompletedList({ completedList }) {
         <h2 style={{ textAlign: "center" }}>Completed List</h2>
         {completedList.length === 0 ? (
           <div className="empty">
-            <img
-              src="/list-empty.png"
-              alt="empty"
-              width="50%"
-              height="50%"
-            />
+            <img src="/list-empty.png" alt="empty" width="50%" height="50%" />
             <h3>
               <span style={{ fontWeight: "600" }}>
                 There's Nothing to Show!
@@ -32,9 +30,20 @@ export default function CompletedList({ completedList }) {
                       justifyContent: "flex-start",
                       alignItems: "center",
                       fontSize: "1.2rem",
+                      border: "2px solid #23a861",
+                      borderRadius: "2px",
+                      padding: "10px",
+                      backgroundColor: "#23a861",
+                      color: "#fff",
                     }}
                   >
-                    <h4 style={{ fontWeight: "600" }}>{item.todo}</h4>
+                    <h4 style={{ fontWeight: "600" }}>
+                      <FontAwesomeIcon
+                        icon={faStar}
+                        style={{ marginRight: "0.5rem" }}
+                      />
+                      {item.todo}
+                    </h4>
                     <h4>Completed At : {item.timestamp}</h4>
                   </li>
                 );
