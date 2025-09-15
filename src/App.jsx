@@ -36,7 +36,7 @@ function App() {
   }
 
   function handleClick() {
-    if (inputVal !== "") {
+    if (inputVal.length !== 0) {
       setToDoList((prev) => [...prev, inputVal]);
       setInputVal("");
       toast("Item Added Successfully", {
